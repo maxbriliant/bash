@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#©MxBit2020
+#Trademark 124612
+
+w0=$0;
+w1=$1;
+w2=$2;
+w4=$3;
+w6=$4;
+
+#quick and dirty
+#for more words use "+"
+#if u need to work without gui
+
+cmdr=$(echo 'links www.google.de/search?q=');
+
+#########
+##sudo apt-get install links
+##
+
+$cmdr$w1$w2$w4$w6;

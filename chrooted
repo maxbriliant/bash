@@ -1,0 +1,8 @@
+# ChrootCheck
+# You might watch Inception
+
+if [ "$(stat -c %d:%i /)" != "$(stat -c %d:%i /proc/1/root/.)" ]; then
+  echo "Chrooted!"
+else
+  echo "Might be dreaming on a different level - but your System is not Chrooted"
+fi
