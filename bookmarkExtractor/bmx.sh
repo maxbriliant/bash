@@ -1,0 +1,1 @@
+cat $(cat Pfad) | grep http |awk  '{print $2}' > links.txt

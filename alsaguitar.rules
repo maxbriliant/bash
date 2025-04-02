@@ -1,0 +1,1 @@
+ATTRS{idVendor}=="0e41", ATTRS{idProduct}=="4151", RUN+="/home/max/source/bash/alsaguitar.sh"

@@ -1,0 +1,4 @@
+sudo sleep 0.1  # To get auth
+i3lock
+sleep 3
+echo freeze | sudo tee /sys/power/state

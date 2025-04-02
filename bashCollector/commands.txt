@@ -1,0 +1,28 @@
+
+#Die IP-Adresse des Nutzers;
+
+___
+
+ifconfig wlp3s0 | grep 192 | awk '{print $2}'  
+
+host myip.opendns.com resolver1.opendns.com | grep myip | sed 's/.*[[:blank:]]//'  
+
+___
+
+#Das verwendete Betriebssystem;
+
+cat /etc/os-release | grep NAME    
+
+#Der Speicherplatz
+lsblk | grep part | awk '{print $4}' # | sed 's/[^0-9,]//g'
+
+#Die Namen des Registrierten Nutzers;
+whoami
+
+#Rechner zuletzt Hochgefahren
+uptime -s / top
+
+#Liste der Programme
+ls /usr/share/applications | sed 's/'.desktop'//' |  sed 's/'.desktop'//'
+#Anzahl der Programme 
+ls /usr/share/applications | wc -l
