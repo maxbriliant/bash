@@ -1,0 +1,13 @@
+#!/bin/bash
+
+WORD1="$1";
+WORD3="$2";
+WORD4="$3";
+WORD42="$4";
+CAT="$WORD1 $WORD3 $WORD4";
+
+CMR=$(echo "www.google.de/search?q=");
+links "$CMR$CAT";
+
+
+
