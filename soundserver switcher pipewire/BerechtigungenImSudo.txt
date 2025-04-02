@@ -1,0 +1,22 @@
+Schaue hier -> /etc/sudoers
+und Füge Hinzu den Pfad zu den Scripten 64.sh, 128.sh usw...
+
+### Für das Pipewire Script im qjackctl Rechtsklick Icon
+max ALL=(ALL) NOPASSWD: /home/max/scripten/pipewire/*.sh
+max ALL=(ALL) NOPASSWD: /usr/share/applications/org.rncbc.qjackctl.desktop
+
+# Stelle sicher, dass die Skripte ausführbar sind:
+chmod +x /home/max/scripten/pipewire/*.sh
+
+# Ändere die Berechtigungen für die Skripte
+chmod 755 /home/max/scripten/pipewire/*.sh
+
+# Ändere den Eigentümer der Skripte auf den Benutzer (z.B. "max")
+chown max:max /home/max/scripten/pipewire/*.sh
+
+# Ändere die Berechtigungen für die Desktopdatei
+chmod 664 /usr/share/applications/org.rncbc.qjackctl.desktop
+
+# Ändere den Eigentümer der Desktopdatei auf den Benutzer (z.B. "max")
+chown max:max /usr/share/applications/org.rncbc.qjackctl.desktop
+\nDIE DESKTOP DATEI MUSS in .local/share/applications/ - ratsam einen hardlink zu /usr/share/applications/.. zu legen

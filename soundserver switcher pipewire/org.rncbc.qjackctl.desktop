@@ -1,0 +1,52 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=QjackCtl
+GenericName=JACK Control
+Comment=QjackCtl is a JACK Audio Connection Kit Qt GUI Interface
+Icon=org.rncbc.qjackctl
+Exec=qjackctl
+Actions=NewShortcut;NewShortcut1;NewShortcut2;NewShortcut3;NewShortcut4;NewShortcut5;NewShortcut6;NewShortcut7;NewShortcut8;NewShortcut9;
+Categories=Audio;AudioVideo;Midi;Qt;X-Alsa;X-Jack;ubuntustudio-midi;
+Keywords=Audio;MIDI;ALSA;JACK;LV2;Qt;
+StartupWMClass=qjackctl
+
+[Desktop Action NewShortcut]
+Name=48 KHz
+Exec=/home/maksim/Scrapes/pipewire/48000.sh
+
+[Desktop Action NewShortcut1]
+Name=96 KHz (!)
+Exec=/home/maksim/Scrapes/pipewire/96000.sh
+
+[Desktop Action NewShortcut2]
+Name=64
+Exec=/home/maksim/Scrapes/pipewire/64.sh
+
+[Desktop Action NewShortcut3]
+Name=128*
+Exec=/home/maksim/Scrapes/pipewire/128.sh
+
+[Desktop Action NewShortcut4]
+Name=256
+Exec=/home/maksim/Scrapes/pipewire/256.sh
+
+[Desktop Action NewShortcut5]
+Name=512
+Exec=/home/maksim/Scrapes/pipewire/512.sh
+
+[Desktop Action NewShortcut6]
+Name=1024
+Exec=/home/maksim/Scrapes/pipewire/1024.sh
+
+[Desktop Action NewShortcut7]
+Name=2048
+Exec=/home/maksim/Scrapes/pipewire/2048.sh
+
+[Desktop Action NewShortcut8]
+Name=4096
+Exec=/home/maksim/Scrapes/pipewire/4096.sh
+
+[Desktop Action NewShortcut9]
+Name=8192
+Exec=/home/maksim/Scrapes/pipewire/8192.sh
