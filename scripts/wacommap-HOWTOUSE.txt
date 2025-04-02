@@ -1,0 +1,3 @@
+  wacommap --device-regex="Wacom.*" --screen="DP-0"
+  #wacommap --device-regex="Wacom.*" --screen="HDMI-0"
+
